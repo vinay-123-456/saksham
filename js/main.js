@@ -98,33 +98,31 @@ function renderServices() {
   if (!container || !window.SakshamData) return;
 
   container.innerHTML = window.SakshamData.services.map(srv => `
-    <div class="service-card" data-id="${srv.id}">
-      <div class="service-img-wrapper">
+    <div class="service-strip-card" data-id="${srv.id}" tabindex="0" role="button" aria-label="${srv.title} service details">
+      <div class="service-card-img">
         <img src="${srv.image}" alt="${srv.title}" loading="lazy">
-        <span class="service-badge">${srv.badge}</span>
       </div>
-      <div class="service-content">
-        <div class="service-icon"><i class="fa-solid ${srv.icon}"></i></div>
-        <h3>${srv.title}</h3>
-        <p>${srv.summary}</p>
-        <ul class="service-feature-list">
-          ${srv.features.slice(0, 3).map(f => `<li><i class="fa-solid fa-sparkles text-gold"></i> ${f}</li>`).join('')}
-        </ul>
-        <div class="service-footer">
-          <span class="service-price">From ₹${srv.startingPrice.toLocaleString('en-IN')}</span>
-          <button class="btn btn-outline-gold btn-sm view-service-btn" data-id="${srv.id}">
-            Details <i class="fa-solid fa-arrow-right"></i>
-          </button>
+      <div class="service-card-bar">
+        <span class="service-card-title">${srv.title}</span>
+        <div class="service-card-arrow">
+          <i class="fa-solid fa-arrow-right"></i>
         </div>
       </div>
     </div>
   `).join('');
 
   // Service click listener for detail modal
-  document.querySelectorAll('.view-service-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const srvId = btn.dataset.id;
+  document.querySelectorAll('.service-strip-card').forEach(card => {
+    const handler = () => {
+      const srvId = card.dataset.id;
       openServiceModal(srvId);
+    };
+    card.addEventListener('click', handler);
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        handler();
+      }
     });
   });
 }
@@ -281,15 +279,28 @@ function renderTestimonials() {
 }
 
 /* ==========================================================================
-   Modals Close Handlers
+   Modals Close Handlers & Showreel
    ========================================================================== */
 function initModals() {
   const closeBtns = document.querySelectorAll('.modal-close, .modal-backdrop');
   closeBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.modal-window').forEach(m => m.classList.remove('active'));
+      const video = document.getElementById('showreel-video');
+      if (video) video.pause();
     });
   });
+
+  const showreelBtn = document.getElementById('open-showreel-btn');
+  const showreelModal = document.getElementById('showreel-modal');
+  if (showreelBtn && showreelModal) {
+    showreelBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      showreelModal.classList.add('active');
+      const video = document.getElementById('showreel-video');
+      if (video) video.play().catch(() => {});
+    });
+  }
 }
 
 /* ==========================================================================

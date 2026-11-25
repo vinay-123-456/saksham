@@ -24,100 +24,100 @@ const SakshamData = {
 
   services: [
     {
-      id: "pyro-sfx",
-      title: "Cold Pyro & Special Effects",
-      badge: "Signature Specialty",
-      icon: "fa-fire-flame-curved",
-      image: "assets/images/pyro.png",
-      summary: "High-grade smokeless cold sparkle fountains, CO2 blasters, heavy fog low-smoke entry, and customized sky pyrotechnics.",
+      id: "fireworks-displays",
+      title: "Fireworks Displays",
+      badge: "Grand Show",
+      icon: "fa-rocket",
+      image: "assets/images/service_fireworks.jpg",
+      summary: "Breathtaking sky fireworks displays, customized shell bursts, and musical synchronized fireworks shows for grand celebrations and VIP events.",
       features: [
-        "Smokeless & Indoor Safe Cold Pyro Fountains",
-        "Heavy Fog Low-Smoke Cloud (Dry Ice FX)",
-        "High-Velocity CO2 Jet Streamers",
-        "Confetti & Rose Petal Air Cannons",
-        "Sky Fireworks & Sync Pyrotechnic Display"
-      ],
-      startingPrice: 25000
-    },
-    {
-      id: "royal-wedding",
-      title: "Royal Wedding Planning & Decor",
-      badge: "Luxury Favorite",
-      icon: "fa-ring",
-      image: "assets/images/wedding.png",
-      summary: "End-to-end wedding conceptualization, royal floral mandap design, theme baraat, Sangeet staging, and guest hospitality.",
-      features: [
-        "Custom Theme Mandap & Stage Crafting",
-        "Royal Baraat Procession Management",
-        "Haldi, Mehendi & Sangeet Setup",
-        "Destination Wedding Venue Logistics",
-        "VVIP Guest Relations & Hospitality"
-      ],
-      startingPrice: 150000
-    },
-    {
-      id: "stage-lighting",
-      title: "Stage, Lighting & Truss Production",
-      badge: "High Tech",
-      icon: "fa-bolt-lightning",
-      image: "assets/images/stage.png",
-      summary: "Architectural event lighting, heavy-duty aluminium box trussing, P3/P4 LED video walls, beam lights, and concert sound system.",
-      features: [
-        "3D Stage Structural Trussing",
-        "Moving Head Sharpy Beams & Lasers",
-        "Ultra HD Outdoor LED Video Walls",
-        "Line-Array Concert Audio Production",
-        "Live DMX Light Controller Operators"
-      ],
-      startingPrice: 45000
-    },
-    {
-      id: "grand-entries",
-      title: "Royal Bride & Groom Entries",
-      badge: "Trending",
-      icon: "fa-crown",
-      image: "assets/images/hero.png",
-      summary: "Unforgettable concept entrances using pyro tunnels, revolving stages, hydraulic platforms, aerial entry, and mirror gates.",
-      features: [
-        "Sparkler Spark Tunnel Walkway",
-        "Hydraulic & Revolving Stage Entries",
-        "Vintage Royal Chariot & Doli Concepts",
-        "Cold Pyro Waterfall Backdrop",
-        "Customized Entry Music & Sound FX Sync"
+        "Synchronized Sky Fireworks & Aerial Shells",
+        "Musical Fireworks Choreography (Pyromusical)",
+        "Certified Licensed Pyrotechnic Crew",
+        "Safe Distance Protocols & Permission Support",
+        "Custom Color Matching (Gold, Silver, Multi-color)"
       ],
       startingPrice: 35000
     },
     {
-      id: "corporate-galas",
-      title: "Corporate Events & Award Galas",
-      badge: "Professional",
-      icon: "fa-briefcase",
-      image: "assets/images/stage.png",
-      summary: "Seamless corporate annual meets, product launches, gala dinners, press conferences, and brand activation stages.",
+      id: "sparkulars-pyro",
+      title: "Sparkulars & Pyro Effects",
+      badge: "Indoor & Safe",
+      icon: "fa-wand-magic-sparkles",
+      image: "assets/images/service_sparkulars.jpg",
+      summary: "Smokeless cold pyro sparkular fountains, waterfall spark curtains, and synchronized aisle sparks for royal bridal & groom entries.",
       features: [
-        "Product Unveiling Special Effects",
-        "Branded LED Backdrops & Stage",
-        "Anchor, Host & Artist Lineups",
-        "High-Speed Registration Counters",
-        "Professional Photography & Aftermovie"
+        "100% Smokeless & Indoor Safe Cold Spark Guns",
+        "Height Adjustable Spark Fountains (1m - 5m)",
+        "DMX Synchronized Remote Triggering",
+        "Sparkular Waterfall Backdrop Systems",
+        "Non-Hazardous & Cool-to-the-Touch Sparks"
       ],
-      startingPrice: 60000
+      startingPrice: 20000
     },
     {
-      id: "celebrity-artist",
-      title: "Artist & Celebrity Booking",
-      badge: "Exclusive",
-      icon: "fa-microphone-lines",
-      image: "assets/images/hero.png",
-      summary: "Managing top Bollywood singers, DJs, anchors, dance troupes, live bands, and celebrity appearances for private events.",
+      id: "flame-jet",
+      title: "Flame Jet Effects",
+      badge: "Concert Grade",
+      icon: "fa-fire",
+      image: "assets/images/service_flames.jpg",
+      summary: "Multi-angle stage flame projectors, colored fire jets, and high-impact pyro bursts programmed for energetic stage performances and DJ drops.",
       features: [
-        "Top Bollywood & EDM DJ Booking",
-        "Live Symphony Bands & Shehnai Masters",
-        "International Dance Troupes & Fire Performers",
-        "Celebrity Guest Appearance Logistics",
-        "Rider Technical Requirements Management"
+        "Multi-Angle Moving Flame Projectors",
+        "Synchronized Fire Bursts for Music Drops",
+        "Real Flame Height up to 4-5 Meters",
+        "Advanced DMX Safety Tilt Cut-Off Sensors",
+        "Outdoor & Large Venue Stage Certification"
       ],
-      startingPrice: 80000
+      startingPrice: 25000
+    },
+    {
+      id: "dry-ice-fog",
+      title: "Dry Ice / Low Fog",
+      badge: "Fairytale Walk",
+      icon: "fa-smog",
+      image: "assets/images/service_fog.jpg",
+      summary: "Dense, floor-hugging dry-ice low fog creating a fairytale cloud walk effect for Varmala, first dance, and couple entries.",
+      features: [
+        "Genuine Heavy Dry-Ice Low Smoke (Never Rises)",
+        "Pure White Cloud Walk Across Stage & Aisle",
+        "Completely Odorless & Residue-Free",
+        "Warm Uplighting Accent Color Matching",
+        "Ideal for Varmala, Ring Exchange & First Dance"
+      ],
+      startingPrice: 15000
+    },
+    {
+      id: "confetti-paper",
+      title: "Confetti & Paper Effects",
+      badge: "Celebration Blast",
+      icon: "fa-burst",
+      image: "assets/images/service_confetti.jpg",
+      summary: "High-powered confetti blowers, stadium streamer air-cannons, and metallic gold foil petal showers for grand celebration climaxes.",
+      features: [
+        "Continuous High-Powered Air Confetti Blowers",
+        "Metallic Gold & Rose-Gold Foil Showers",
+        "Biodegradable Paper & Fresh Rose Petal Launchers",
+        "Stadium Streamer Ribbon Cannon Blasts",
+        "Instant Remote Wireless Triggering"
+      ],
+      startingPrice: 12000
+    },
+    {
+      id: "complete-effects",
+      title: "Complete Event Effects",
+      badge: "All-in-One",
+      icon: "fa-bolt-lightning",
+      image: "assets/images/service_complete.jpg",
+      summary: "Turnkey production combining laser light shows, moving head beams, CO2 jets, sparkulars, and audio-visual synchronization.",
+      features: [
+        "Integrated Stage Pyrotechnics & Laser Systems",
+        "Line-Array Audio & Moving Head Lighting Rig",
+        "Heavy Duty Aluminium Trussing & LED P3 Screens",
+        "Dedicated Master Technical Director on Site",
+        "End-to-End Rehearsal & Live Show Management"
+      ],
+      startingPrice: 50000
     }
   ],
 

@@ -9,7 +9,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -23,10 +23,37 @@
   <header class="navbar-header">
     <div class="container nav-container">
       <a href="#hero" class="brand-logo">
-        <div class="brand-icon"><i class="fa-solid fa-crown"></i></div>
-        <div class="brand-text">
-          <h3>SAKSHAM</h3>
-          <span>EVENTS & PYRO FX</span>
+        <div class="brand-spark-icon">
+          <svg width="42" height="34" viewBox="0 0 100 80" fill="none">
+            <circle cx="50" cy="55" r="4.5" fill="#e5c158"/>
+            <line x1="50" y1="46" x2="50" y2="10" stroke="#e5c158" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="50" cy="7" r="3" fill="#f7e7a9"/>
+            
+            <line x1="43" y1="48" x2="28" y2="15" stroke="#e5c158" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="26" cy="12" r="2.8" fill="#f7e7a9"/>
+            
+            <line x1="57" y1="48" x2="72" y2="15" stroke="#e5c158" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="74" cy="12" r="2.8" fill="#f7e7a9"/>
+
+            <line x1="38" y1="52" x2="12" y2="28" stroke="#e5c158" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="10" cy="26" r="2.8" fill="#f7e7a9"/>
+
+            <line x1="62" y1="52" x2="88" y2="28" stroke="#e5c158" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="90" cy="26" r="2.8" fill="#f7e7a9"/>
+
+            <line x1="35" y1="57" x2="4" y2="48" stroke="#e5c158" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="3" cy="47" r="2.5" fill="#f7e7a9"/>
+
+            <line x1="65" y1="57" x2="96" y2="48" stroke="#e5c158" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="97" cy="47" r="2.5" fill="#f7e7a9"/>
+
+            <line x1="46" y1="47" x2="38" y2="28" stroke="#f7e7a9" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="54" y1="47" x2="62" y2="28" stroke="#f7e7a9" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="brand-text-luxury">
+          <span class="brand-main-title">SAKSHAM</span>
+          <span class="brand-sub-title">— EVENTS —</span>
         </div>
       </a>
 
@@ -35,52 +62,103 @@
       </button>
 
       <ul class="nav-menu" id="nav-menu">
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#calculator" class="nav-link">Budget Calculator</a></li>
-        <li><a href="#entry-builder" class="nav-link">Custom Entry Builder</a></li>
-        <li><a href="#portfolio" class="nav-link">Gallery & Reels</a></li>
-        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-        <li><a href="#contact" class="btn btn-gold btn-sm"><i class="fa-brands fa-whatsapp"></i> Book Event</a></li>
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li class="nav-item-dropdown">
+          <a href="#services" class="nav-link">Services <i class="fa-solid fa-chevron-down nav-chevron"></i></a>
+        </li>
+        <li><a href="#portfolio" class="nav-link">Gallery</a></li>
+        <li><a href="#calculator" class="nav-link">Packages</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
       </ul>
+
+      <a href="#contact" class="btn btn-enquire-pill">
+        <i class="fa-brands fa-whatsapp"></i> Enquire Now
+      </a>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section id="hero" class="hero-section">
     <div class="hero-bg"></div>
-    <div class="hero-spark-glow"></div>
-    <div class="container">
+    <div class="container hero-container">
       <div class="hero-content">
-        <span class="section-tag"><i class="fa-solid fa-sparkles"></i> @saksham_events___ Official</span>
-        <h1 class="hero-title">Crafting <span>Royal Celebrations</span> & Pyrotechnic Spectacles</h1>
-        <p class="hero-desc">Elevating weddings, concerts, and galas with breathtaking cold pyro sparklers, opulent mandap decors, and high-tech stage productions.</p>
+        <div class="hero-kicker">
+          <span>EVENT EFFECTS</span>
+          <span class="kicker-dot">•</span>
+          <span>SPECIAL EFFECTS</span>
+          <span class="kicker-dot">•</span>
+          <span>FIREWORKS</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-title-main">Fireworks &amp;<br>Special Effects</span>
+          <span class="hero-title-script">That Light Up Your Events</span>
+        </h1>
+        <p class="hero-desc">
+          From Grand Weddings to Corporate Celebrations, we create breathtaking moments with world-class Fireworks &amp; Event Effects.
+        </p>
 
         <div class="hero-actions">
-          <a href="#calculator" class="btn btn-gold"><i class="fa-solid fa-calculator"></i> Estimate Event Budget</a>
-          <a href="#entry-builder" class="btn btn-pyro"><i class="fa-solid fa-wand-magic-sparkles"></i> Build Custom Entry</a>
-          <a href="#portfolio" class="btn btn-outline-gold"><i class="fa-regular fa-image"></i> View Gallery</a>
+          <a href="#services" class="btn btn-gold btn-hero-pill">
+            Explore Services <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <button type="button" class="btn btn-showreel btn-hero-pill" id="open-showreel-btn">
+            <i class="fa-solid fa-circle-play"></i> Watch Showreel
+          </button>
         </div>
       </div>
+    </div>
 
-      <!-- Stats Bar -->
-      <div class="stats-bar">
-        <div class="stats-grid" id="stats-grid">
-          <!-- Dynamically Rendered by main.js -->
+    <!-- Value Highlights Strip -->
+    <div class="hero-feature-strip">
+      <div class="container feature-strip-container">
+        <div class="feature-strip-item">
+          <div class="feature-strip-icon"><i class="fa-solid fa-rocket"></i></div>
+          <div class="feature-strip-text">Professional Fireworks Show</div>
+        </div>
+        <div class="feature-strip-divider"></div>
+        <div class="feature-strip-item">
+          <div class="feature-strip-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <div class="feature-strip-text">Advanced Event Effects</div>
+        </div>
+        <div class="feature-strip-divider"></div>
+        <div class="feature-strip-item">
+          <div class="feature-strip-icon"><i class="fa-solid fa-sliders"></i></div>
+          <div class="feature-strip-text">Customized Event Solutions</div>
+        </div>
+        <div class="feature-strip-divider"></div>
+        <div class="feature-strip-item">
+          <div class="feature-strip-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="feature-strip-text">Safe &amp; Certified Execution</div>
+        </div>
+        <div class="feature-strip-divider"></div>
+        <div class="feature-strip-item">
+          <div class="feature-strip-icon"><i class="fa-solid fa-people-group"></i></div>
+          <div class="feature-strip-text">Experienced Technical Team</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="section">
+  <section id="services" class="section services-showcase-section">
     <div class="container">
-      <div class="text-center">
-        <span class="section-tag">World-Class Execution</span>
-        <h2 class="section-title">Exclusive Event Services</h2>
-        <p class="section-desc">From grand Indian weddings to synchronized fireworks show, we handle every detail with precision and flair.</p>
+      <div class="section-title-wrap">
+        <span class="ornate-line"></span>
+        <h2 class="section-title-ornate">Our Services</h2>
+        <span class="ornate-line"></span>
       </div>
 
-      <div class="services-grid" id="services-grid">
+      <div class="services-grid-six" id="services-grid">
+        <!-- Dynamically Rendered by main.js with 6 cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Stats Counter Bar -->
+  <section class="stats-trust-strip" id="about">
+    <div class="container">
+      <div class="stats-grid" id="stats-grid">
         <!-- Dynamically Rendered by main.js -->
       </div>
     </div>
@@ -488,6 +566,30 @@
       </div>
     </div>
   </footer>
+
+  <!-- Showreel Video Modal -->
+  <div class="modal-window" id="showreel-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-container showreel-container">
+      <button class="modal-close" id="close-showreel-btn"><i class="fa-solid fa-xmark"></i></button>
+      <div class="showreel-video-body">
+        <div class="showreel-header">
+          <span class="section-tag"><i class="fa-solid fa-play"></i> Saksham Events</span>
+          <h3 class="text-gold" style="margin-top: 8px;">Official Pyrotechnics &amp; Grand Events Showreel</h3>
+        </div>
+        <div class="showreel-player-wrapper">
+          <video id="showreel-video" controls poster="assets/images/hero_stage_clean.jpg" style="width: 100%; border-radius: 12px; max-height: 480px; background: #000;">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-fireworks-bursting-in-the-sky-40342-large.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+        <div class="showreel-cta-strip">
+          <p class="text-muted">Experience synchronized cold pyro sparklers, royal entries, and musical sky fireworks.</p>
+          <a href="#contact" class="btn btn-gold btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire For Your Date</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Service Detail Modal -->
   <div class="modal-window" id="service-detail-modal">
