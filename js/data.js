@@ -28,7 +28,7 @@ const SakshamData = {
       title: "Fireworks Displays",
       badge: "Grand Show",
       icon: "fa-rocket",
-      image: "assets/images/service_fireworks.jpg",
+      image: "assets/images/service_fireworks_hd.jpg",
       summary: "Breathtaking sky fireworks displays, customized shell bursts, and musical synchronized fireworks shows for grand celebrations and VIP events.",
       features: [
         "Synchronized Sky Fireworks & Aerial Shells",
@@ -44,7 +44,7 @@ const SakshamData = {
       title: "Sparkulars & Pyro Effects",
       badge: "Indoor & Safe",
       icon: "fa-wand-magic-sparkles",
-      image: "assets/images/service_sparkulars.jpg",
+      image: "assets/images/service_sparkulars_hd.jpg",
       summary: "Smokeless cold pyro sparkular fountains, waterfall spark curtains, and synchronized aisle sparks for royal bridal & groom entries.",
       features: [
         "100% Smokeless & Indoor Safe Cold Spark Guns",
@@ -60,7 +60,7 @@ const SakshamData = {
       title: "Flame Jet Effects",
       badge: "Concert Grade",
       icon: "fa-fire",
-      image: "assets/images/service_flames.jpg",
+      image: "assets/images/service_flames_hd.jpg",
       summary: "Multi-angle stage flame projectors, colored fire jets, and high-impact pyro bursts programmed for energetic stage performances and DJ drops.",
       features: [
         "Multi-Angle Moving Flame Projectors",
@@ -76,7 +76,7 @@ const SakshamData = {
       title: "Dry Ice / Low Fog",
       badge: "Fairytale Walk",
       icon: "fa-smog",
-      image: "assets/images/service_fog.jpg",
+      image: "assets/images/service_fog_hd.jpg",
       summary: "Dense, floor-hugging dry-ice low fog creating a fairytale cloud walk effect for Varmala, first dance, and couple entries.",
       features: [
         "Genuine Heavy Dry-Ice Low Smoke (Never Rises)",
@@ -92,7 +92,7 @@ const SakshamData = {
       title: "Confetti & Paper Effects",
       badge: "Celebration Blast",
       icon: "fa-burst",
-      image: "assets/images/service_confetti.jpg",
+      image: "assets/images/service_confetti_hd.jpg",
       summary: "High-powered confetti blowers, stadium streamer air-cannons, and metallic gold foil petal showers for grand celebration climaxes.",
       features: [
         "Continuous High-Powered Air Confetti Blowers",
@@ -108,7 +108,7 @@ const SakshamData = {
       title: "Complete Event Effects",
       badge: "All-in-One",
       icon: "fa-bolt-lightning",
-      image: "assets/images/service_complete.jpg",
+      image: "assets/images/service_complete_hd.jpg",
       summary: "Turnkey production combining laser light shows, moving head beams, CO2 jets, sparkulars, and audio-visual synchronization.",
       features: [
         "Integrated Stage Pyrotechnics & Laser Systems",
