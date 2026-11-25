@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saksham Events | Royal Weddings, Pyrotechnics & Luxury Event Management</title>
+  <meta name="description" content="Saksham Events (@saksham_events___) - Premium Event Management, Royal Weddings, Cold Pyro Sparklers, Stage Production & Special Effects.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header class="navbar-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <div class="brand-icon"><i class="fa-solid fa-crown"></i></div>
+        <div class="brand-text">
+          <h3>SAKSHAM</h3>
+          <span>EVENTS & PYRO FX</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#calculator" class="nav-link">Budget Calculator</a></li>
+        <li><a href="#entry-builder" class="nav-link">Custom Entry Builder</a></li>
+        <li><a href="#portfolio" class="nav-link">Gallery & Reels</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="btn btn-gold btn-sm"><i class="fa-brands fa-whatsapp"></i> Book Event</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg"></div>
+    <div class="hero-spark-glow"></div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="section-tag"><i class="fa-solid fa-sparkles"></i> @saksham_events___ Official</span>
+        <h1 class="hero-title">Crafting <span>Royal Celebrations</span> & Pyrotechnic Spectacles</h1>
+        <p class="hero-desc">Elevating weddings, concerts, and galas with breathtaking cold pyro sparklers, opulent mandap decors, and high-tech stage productions.</p>
+
+        <div class="hero-actions">
+          <a href="#calculator" class="btn btn-gold"><i class="fa-solid fa-calculator"></i> Estimate Event Budget</a>
+          <a href="#entry-builder" class="btn btn-pyro"><i class="fa-solid fa-wand-magic-sparkles"></i> Build Custom Entry</a>
+          <a href="#portfolio" class="btn btn-outline-gold"><i class="fa-regular fa-image"></i> View Gallery</a>
+        </div>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="stats-bar">
+        <div class="stats-grid" id="stats-grid">
+          <!-- Dynamically Rendered by main.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">World-Class Execution</span>
+        <h2 class="section-title">Exclusive Event Services</h2>
+        <p class="section-desc">From grand Indian weddings to synchronized fireworks show, we handle every detail with precision and flair.</p>
+      </div>
+
+      <div class="services-grid" id="services-grid">
+        <!-- Dynamically Rendered by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Budget Calculator Section -->
+  <section id="calculator" class="section" style="background: rgba(12, 15, 25, 0.5);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Instant Cost Estimator</span>
+        <h2 class="section-title">Calculate Your Event Investment</h2>
+        <p class="section-desc">Select your event requirements below for an instant estimated breakdown and direct WhatsApp quote.</p>
+      </div>
+
+      <div class="calculator-box">
+        <div class="calc-grid">
+          <div class="calc-controls">
+            <!-- Event Type -->
+            <div class="calc-group">
+              <label class="calc-label"><i class="fa-solid fa-calendar-star"></i> 1. Select Event Type</label>
+              <div class="calc-type-selector">
+                <button type="button" class="calc-type-btn active" data-type="wedding">Grand Wedding</button>
+                <button type="button" class="calc-type-btn" data-type="sangeet">Sangeet / Haldi</button>
+                <button type="button" class="calc-type-btn" data-type="corporate">Corporate Gala</button>
+                <button type="button" class="calc-type-btn" data-type="birthday">Luxury Birthday</button>
+                <button type="button" class="calc-type-btn" data-type="concert">Concert / Show</button>
+              </div>
+            </div>
+
+            <!-- Guest Count -->
+            <div class="calc-group">
+              <label class="calc-label"><i class="fa-solid fa-users"></i> 2. Expected Guest Count</label>
+              <div class="range-slider-wrapper">
+                <input type="range" id="calc-guests-slider" min="50" max="2000" step="50" value="250">
+                <span class="guest-value-badge"><span id="calc-guests-val">250</span> Guests</span>
+              </div>
+            </div>
+
+            <!-- City Tier -->
+            <div class="calc-group">
+              <label class="calc-label"><i class="fa-solid fa-location-dot"></i> 3. Venue / Location</label>
+              <select id="calc-city-select" class="calc-city-select">
+                <option value="tier1">Jaipur / Mumbai / Delhi NCR (Hub City)</option>
+                <option value="tier2">Other City Pan-India</option>
+                <option value="destination">Royal Destination Wedding (Resort / Fort)</option>
+              </select>
+            </div>
+
+            <!-- Services Checkboxes -->
+            <div class="calc-group">
+              <label class="calc-label"><i class="fa-solid fa-sliders"></i> 4. Customize Required Add-ons</label>
+              <div class="calc-services-grid">
+                <label class="checkbox-card">
+                  <input type="checkbox" class="calc-service-check" value="pyro" checked>
+                  <span>Cold Pyro Sparkler Guns</span>
+                </label>
+                <label class="checkbox-card">
+                  <input type="checkbox" class="calc-service-check" value="fog">
+                  <span>Low-Smoke Fog Cloud</span>
+                </label>
+                <label class="checkbox-card">
+                  <input type="checkbox" class="calc-service-check" value="decor" checked>
+                  <span>Royal Floral Mandap</span>
+                </label>
+                <label class="checkbox-card">
+                  <input type="checkbox" class="calc-service-check" value="lighting" checked>
+                  <span>Sharpy & Laser Lighting</span>
+                </label>
+                <label class="checkbox-card">
+                  <input type="checkbox" class="calc-service-check" value="audio">
+                  <span>Concert Line-Array Audio</span>
+                </label>
+                <label class="checkbox-card">
+                  <input type="checkbox" class="calc-service-check" value="co2">
+                  <span>CO2 Jets & Confetti</span>
+                </label>
+                <label class="checkbox-card">
+                  <input type="checkbox" class="calc-service-check" value="photo">
+                  <span>Cinematic 4K Shoot</span>
+                </label>
+                <label class="checkbox-card">
+                  <input type="checkbox" class="calc-service-check" value="artist">
+                  <span>Celebrity / Band Booking</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Summary Box -->
+          <div class="calc-summary-card">
+            <div>
+              <h3 class="summary-title">Investment Estimate</h3>
+              <ul class="breakdown-list" id="calc-breakdown-list">
+                <!-- Calculated dynamically -->
+              </ul>
+            </div>
+
+            <div>
+              <div class="calc-total-box">
+                <span>Estimated Budget</span>
+                <h2 id="calc-total-amount">₹0</h2>
+              </div>
+              <button type="button" class="btn btn-gold btn-full" id="calc-whatsapp-btn" style="width:100%;">
+                <i class="fa-brands fa-whatsapp"></i> Get Official Proposal on WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Dream Entry & FX Builder -->
+  <section id="entry-builder" class="section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Custom Entry Concept</span>
+        <h2 class="section-title">Build Your Dream Entrance & Pyrotechnics</h2>
+        <p class="section-desc">Design your grand entry step-by-step and visualize the pyrotechnic magic before your event.</p>
+      </div>
+
+      <div class="builder-box">
+        <!-- Stepper Indicators -->
+        <div class="builder-stepper">
+          <div class="builder-step-indicator active" id="step-ind-1">
+            <div class="step-circle">1</div>
+            <span class="step-label">Entry Concept</span>
+          </div>
+          <div class="builder-step-indicator" id="step-ind-2">
+            <div class="step-circle">2</div>
+            <span class="step-label">Special FX</span>
+          </div>
+          <div class="builder-step-indicator" id="step-ind-3">
+            <div class="step-circle">3</div>
+            <span class="step-label">Theme Vibe</span>
+          </div>
+          <div class="builder-step-indicator" id="step-ind-4">
+            <div class="step-circle">4</div>
+            <span class="step-label">Summary</span>
+          </div>
+        </div>
+
+        <!-- Step 1: Entry Style -->
+        <div class="builder-step-content active" id="builder-step-1">
+          <h3 class="mb-3">Choose Your Grand Entrance Style</h3>
+          <div class="builder-cards-grid" id="builder-styles-grid">
+            <!-- Dynamically populated by builder.js -->
+          </div>
+        </div>
+
+        <!-- Step 2: FX Addons -->
+        <div class="builder-step-content" id="builder-step-2">
+          <h3 class="mb-3">Select Visual & Pyrotechnic FX Add-ons</h3>
+          <div class="builder-cards-grid" id="builder-addons-grid">
+            <!-- Dynamically populated by builder.js -->
+          </div>
+        </div>
+
+        <!-- Step 3: Theme -->
+        <div class="builder-step-content" id="builder-step-3">
+          <h3 class="mb-3">Select Event Lighting & Aesthetic Theme</h3>
+          <div class="builder-cards-grid" id="builder-themes-grid">
+            <!-- Dynamically populated by builder.js -->
+          </div>
+        </div>
+
+        <!-- Step 4: Summary -->
+        <div class="builder-step-content" id="builder-step-4">
+          <div class="text-center">
+            <div class="section-tag" style="margin-bottom:20px;">Ready For Execution</div>
+            <h3>Your Customized Grand Entry Specification</h3>
+          </div>
+
+          <div style="background: rgba(8, 9, 14, 0.8); border: 1px solid var(--border-gold); padding: 30px; border-radius: var(--radius-md); margin: 30px 0;">
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+              <div>
+                <span class="text-muted" style="font-size:0.85rem;">SELECTED CONCEPT</span>
+                <h4 id="summary-style-name" class="text-gold" style="font-size:1.3rem; margin-top:4px;">-</h4>
+              </div>
+              <div>
+                <span class="text-muted" style="font-size:0.85rem;">SELECTED THEME</span>
+                <h4 id="summary-theme-name" style="font-size:1.3rem; margin-top:4px;">-</h4>
+              </div>
+            </div>
+
+            <div style="margin-top:20px;">
+              <span class="text-muted" style="font-size:0.85rem;">SPECIAL EFFECTS ADD-ONS</span>
+              <ul id="summary-addons-list" style="list-style:none; margin-top:8px;">
+                <!-- Populated dynamically -->
+              </ul>
+            </div>
+
+            <div style="border-top:1px solid rgba(255,255,255,0.1); margin-top:20px; padding-top:20px; display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <span class="text-muted">Estimated Entry Setup Price</span>
+                <h2 id="summary-total-price" class="text-gold">₹0</h2>
+              </div>
+              <button type="button" class="btn btn-pyro" id="builder-submit-wa">
+                <i class="fa-brands fa-whatsapp"></i> Reserve Entry Setup Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step Navigation Buttons -->
+        <div class="builder-nav-actions">
+          <button type="button" class="btn btn-outline-gold" id="builder-prev-btn" style="display:none;">
+            <i class="fa-solid fa-arrow-left"></i> Previous Step
+          </button>
+          <div></div>
+          <button type="button" class="btn btn-gold" id="builder-next-btn">
+            Next Step <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Gallery Showcase -->
+  <section id="portfolio" class="section" style="background: rgba(12, 15, 25, 0.4);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Visual Spectacles</span>
+        <h2 class="section-title">Event Portfolio & Pyrotechnics</h2>
+        <p class="section-desc">Explore recent royal weddings, cold pyro spark displays, and grand concert stages executed by Saksham Events.</p>
+
+        <!-- Category Filters -->
+        <div class="gallery-filters">
+          <button type="button" class="gallery-filter-btn active" data-filter="all">All Spectacles</button>
+          <button type="button" class="gallery-filter-btn" data-filter="pyro">Cold Pyro & FX</button>
+          <button type="button" class="gallery-filter-btn" data-filter="wedding">Royal Weddings</button>
+          <button type="button" class="gallery-filter-btn" data-filter="stage">Stage & Lighting</button>
+        </div>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Rendered dynamically by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Reels Showcase -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="fa-brands fa-instagram text-crimson"></i> @saksham_events___</span>
+        <h2 class="section-title">Trending Instagram Reels</h2>
+        <p class="section-desc">Check out our viral wedding entries and pyrotechnic highlights directly from our Instagram feed.</p>
+      </div>
+
+      <div class="reels-grid" id="reels-grid">
+        <!-- Rendered dynamically by main.js -->
+      </div>
+
+      <div class="text-center" style="margin-top: 40px;">
+        <a href="https://www.instagram.com/saksham_events___/?hl=en" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold">
+          <i class="fa-brands fa-instagram"></i> Follow @saksham_events___ on Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section" style="background: rgba(12, 15, 25, 0.5);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Client Words</span>
+        <h2 class="section-title">Loved by Hosts & Couples</h2>
+        <p class="section-desc">Read feedback from satisfied clients across Rajasthan, Mumbai, Delhi, and pan-India destination venues.</p>
+      </div>
+
+      <div class="testimonials-grid" id="testimonials-track">
+        <!-- Rendered dynamically by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Booking Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-box">
+        <div class="contact-grid">
+          <div>
+            <span class="section-tag">Get in Touch</span>
+            <h2 style="font-size: 2.2rem; margin-top: 10px;">Book Saksham Events For Your Next Spectacle</h2>
+            <p style="color: var(--text-muted); margin-top: 15px;">Have questions or want to discuss date availability? Send us a direct inquiry or message us on WhatsApp!</p>
+
+            <div class="contact-info-list">
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-brands fa-instagram"></i></div>
+                <div>
+                  <h4 style="font-size: 1rem;">Instagram Profile</h4>
+                  <a href="https://www.instagram.com/saksham_events___/?hl=en" target="_blank" style="color: var(--color-gold); text-decoration: none;">@saksham_events___</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <h4 style="font-size: 1rem;">Phone & WhatsApp</h4>
+                  <p style="color: var(--text-muted);">+91 98765 43210</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h4 style="font-size: 1rem;">Operating Regions</h4>
+                  <p style="color: var(--text-muted);">Jaipur, Mumbai, Delhi NCR, Udaipur, Goa & Pan-India Destination Events</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <form id="main-contact-form">
+              <div class="form-group">
+                <label class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Vikram Sharma" required>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">Phone / WhatsApp</label>
+                  <input type="tel" id="contact-phone" class="form-input" placeholder="+91 98765 43210" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Event Date</label>
+                  <input type="date" id="contact-date" class="form-input">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Event Location / City</label>
+                <input type="text" id="contact-city" class="form-input" placeholder="e.g. Jaipur, Leela Palace">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Event Details / Requirements</label>
+                <textarea id="contact-message" class="form-input" rows="4" placeholder="Tell us about your event vision, pyro preferences, or guest count..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold" style="width: 100%;">
+                <i class="fa-brands fa-whatsapp"></i> Send Direct Inquiry via WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo">
+            <div class="brand-icon"><i class="fa-solid fa-crown"></i></div>
+            <div class="brand-text">
+              <h3>SAKSHAM</h3>
+              <span>EVENTS & PYRO FX</span>
+            </div>
+          </div>
+          <p>Premier Event Management & Pyrotechnics Company. Specializing in royal destination weddings, cold pyro fountain fireworks, stage production, and celebrity artist booking.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/saksham_events___/?hl=en" target="_blank" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://wa.me/919876543210" target="_blank" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Cold Pyro & FX</a></li>
+            <li><a href="#services">Royal Mandap Decor</a></li>
+            <li><a href="#services">Stage Truss & Sound</a></li>
+            <li><a href="#services">Bride & Groom Entries</a></li>
+            <li><a href="#services">Corporate Galas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Interactive Tools</h4>
+          <ul class="footer-links">
+            <li><a href="#calculator">Event Budget Estimator</a></li>
+            <li><a href="#entry-builder">Dream Entry Builder</a></li>
+            <li><a href="#portfolio">Photo & Video Gallery</a></li>
+            <li><a href="#testimonials">Client Testimonials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact & Info</h4>
+          <p style="margin-top:0;">Instagram: <a href="https://www.instagram.com/saksham_events___/?hl=en" style="color:var(--color-gold);">@saksham_events___</a></p>
+          <p>Phone: +91 98765 43210</p>
+          <p>Location: Jaipur • Mumbai • Delhi • Pan-India</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Saksham Events (@saksham_events___). All Rights Reserved. Luxury Event & Pyrotechnic Production.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Service Detail Modal -->
+  <div class="modal-window" id="service-detail-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-container">
+      <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      <div id="service-modal-body">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="modal-window" id="lightbox-modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-container lightbox-container">
+      <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+      <img id="lightbox-img" src="" alt="Gallery Preview">
+      <div class="lightbox-caption">
+        <h3 id="lightbox-title" class="text-gold">Title</h3>
+        <p id="lightbox-subtitle" class="text-muted">Subtitle</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/builder.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
