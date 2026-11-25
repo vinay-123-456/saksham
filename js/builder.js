@@ -202,7 +202,7 @@ class EntryBuilder {
       `💵 *Estimated Custom Entry Price:* ₹${totalCost.toLocaleString('en-IN')}%0A%0A` +
       `I would love to confirm date availability and discuss execution details!`;
 
-    const phone = window.SakshamData?.brand?.whatsapp || "919876543210";
+    const phone = window.SakshamData?.brand?.whatsapp || "919082357220";
     window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
   }
 }

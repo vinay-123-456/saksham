@@ -166,7 +166,7 @@ function openServiceModal(serviceId) {
 
 window.inquireService = function(serviceTitle) {
   const msg = `Hello Saksham Events! I am interested in booking or getting details for *${serviceTitle}*. Can you please share availability and customized quote options?`;
-  const phone = window.SakshamData?.brand?.whatsapp || "919876543210";
+  const phone = window.SakshamData?.brand?.whatsapp || "919082357220";
   window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank');
 };
 
@@ -250,7 +250,7 @@ function renderReels() {
 
 window.openReelModal = function(title, views) {
   const msg = `Hi Saksham Events! I watched your trending Instagram reel: "${title}" (${views}) and want a similar setup for my event!`;
-  const phone = window.SakshamData?.brand?.whatsapp || "919876543210";
+  const phone = window.SakshamData?.brand?.whatsapp || "919082357220";
   window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank');
 };
 
@@ -327,7 +327,7 @@ function initContactForm() {
       `💬 *Requirements:* ${message}%0A%0A` +
       `Please contact me with availability and details!`;
 
-    const targetPhone = window.SakshamData?.brand?.whatsapp || "919876543210";
+    const targetPhone = window.SakshamData?.brand?.whatsapp || "919082357220";
     window.open(`https://wa.me/${targetPhone}?text=${text}`, '_blank');
   });
 }

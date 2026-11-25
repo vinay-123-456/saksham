@@ -8,8 +8,8 @@ const SakshamData = {
     name: "Saksham Events",
     handle: "@saksham_events___",
     tagline: "Crafting Royal Celebrations & Pyrotechnic Spectacles",
-    phone: "+91 98765 43210",
-    whatsapp: "919876543210",
+    phone: "+91 90823 57220",
+    whatsapp: "919082357220",
     email: "contact@sakshamevents.com",
     location: "Jaipur | Mumbai | Delhi | Pan-India & Destination",
     instagramUrl: "https://www.instagram.com/saksham_events___/?hl=en"

@@ -175,7 +175,7 @@ class EventCalculator {
       `💰 *Estimated Budget:* ${estCost}%0A%0A` +
       `Can you please provide a detailed proposal and check availability for our dates?`;
 
-    const phone = window.SakshamData?.brand?.whatsapp || "919876543210";
+    const phone = window.SakshamData?.brand?.whatsapp || "919082357220";
     window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
   }
 }
